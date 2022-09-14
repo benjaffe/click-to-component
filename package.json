@@ -1,5 +1,6 @@
 {
-  "version": "1.0.11",
+  "version": "1.0.12",
+  "name": "click-to-component",
   "private": true,
   "main": "index.js",
   "scripts": {
