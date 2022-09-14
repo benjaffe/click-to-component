@@ -92,7 +92,9 @@ export function ClickToComponent({ editor = 'vscode' }) {
     ) {
       switch (state) {
         case State.IDLE:
-          if (event.altKey) setState(State.HOVER)
+        case State.HOVER:
+          if (event.altKey && event.ctrlKey) setState(State.HOVER)
+          else setState(State.IDLE)
           break
 
         default:
